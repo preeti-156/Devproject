@@ -1,38 +1,218 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #333333;
+    overflow-y: scroll;
+    margin: 0;
+    padding: 0;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.image-container{
+  width: 50%;
+  height: auto;
+  position: relative;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.cover{
+  box-sizing: border-box;
+  background-color: #1E1E1E;
+  width: 406px;
+  height: 373px;
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  border-radius: 16px;
+  box-shadow: 0 0.88em 0.550em rgb(55, 55, 55);
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  margin-top: 80px;
+  align-self: flex-end;
+
+}
+
+
+h2 {
+   font-family: 'Inter', sans-serif;
+   color: #FFFFFF;
+   font-size: 18px;
+   margin: 32px;
+   font-weight: medium;
+   
+
+}
+h3 {
+   font-family: 'Inter', sans-serif;
+   color: #FFFFFF;
+   font-size: 18px;
+   margin: 32px;
+   font-weight: medium;
+
+}
+.inputdata {
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.rounded-box {
+  border-radius: 16px;
+  width: 342px;
+  height: 51px;
+  font-size: 20px;
+  background-color: #333333;
+  outline: none;
+  border: none;
+  margin-bottom: 10px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.login-btn{
+  margin-top: 10px;
+  background-color: white;
+  color: #1E1E1E;
+  
+
+}
+.roundedbox::placeholder {
+  padding: 30px; 
+  color: white;
+  
+}
+.login-btn {
+  margin-top: 10px;
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  transition: background-color 0.3s; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.login-btn:hover {
+  color: rgb(9, 120, 172);
+  cursor: pointer; 
+}
+h1{
+  text-align-last:center; 
+  font-family: 'Inter', sans-serif;
+  color: white;
+  position: absolute;
+  left: 75%;
+  top: 25%;
+  transform: translate(-50%, -50%);
+  font-size: 32px;
+}
+.rounded-box::placeholder {
+  padding: 15px; 
+  color: offwhite;
+  font-weight: 50;
+}
+.footerinfo {
+  position: absolute;
+  right: 1%;
+  top: 110%;
+  transform: translate(-50%, -50%);
+  font-weight: medium;
+  font: 'Inter', sans-serif;
+  width:563px;
+  height: 238px;
+  text-align: center;
+  color: #FFFFFF;
+ 
+}
+
+.container {
+  text-align: center;
+  padding: -50%;
+  bottom: 100px;
+  left: 25%;
+  width: 50%;
+  position: absolute; 
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.image-heading{
+  text-wrap: nowrap;
+  font-size: 40px;
+}
+
+p {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  margin: 0 10px;
+}
+
+.image-names {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.image-names p {
+  margin: 0 10px;
+  font-size: 10px;
+  color: white;
+}
+
+.subline {
+  font-size: 18px;
+  color: white;
+}
+
+.picture2{
+  position: absolute;
+  top: 70px;
+  left: 177px;
+  right: 400px; 
+  width: 25%; 
+  height: 50%; 
+  z-index: 2; 
+}
+
+.small{
+  width: 100%;
+  height: 100%;
+}
+.image-container2{
+  left: 10px;
+}
+.image-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+
+  /* Optional: Add more styles for button appearance */
+}
+
+/* Change button background color on hover */
+.image-button:hover {
+  background-color: #0056b3; /* Hover background color */
 }
