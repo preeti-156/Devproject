@@ -1,27 +1,23 @@
 
-import React from 'react'
-import Images from "./Images"
-import imge2 from '../static/booo.png'
+import React from 'react';
+import Images from './Images'; 
+import imge2 from '../static/booo.png';
+import imge1 from '../static/new.png';
 
-function Left() {
-    return (
-      <div>
-        <h1 id="form-heading" className="leftportion">
-          Pixelpilot
-        </h1>
-
-
-        <div className="image-container">
-                <Images />
-         </div>     
-
-        <div className="image-container2">
-             <img src={imge2} alt="" className="picture2" />
-        </div> 
-        
+export default function Left() {
+  return (
+    <div className="split left">
+      <div className="centered">
+        <img src={imge1} alt="image Loading..." className="picture1" />
+        <div className="centered-img2">
+          <img src={imge2} alt="image Loading..." className="picture2" />
+        </div>
       </div>
-    );
-  }
+      <Images /> 
+    </div>
+  );
+}
+
+
   
-  export default Left;
   

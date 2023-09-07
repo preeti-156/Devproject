@@ -12,15 +12,15 @@ export default function Images(){
             <img src={staticImage} alt="" className="picture" />
             <div className="container">
                 <table>
-                    <tbody> {/* Add this tbody element */}
+                    <tbody> 
                         <tr>
-                            <td>
+                            <td  className="column">
                                 <SmallImg img={imge3} name="Bulk edit"  />                            
                             </td>
-                            <td>
+                            <td  className="column">
                                 <SmallImg img={imge4} name="Bulk edit"  />
                             </td>
-                            <td>
+                            <td  className="column">
                                 <SmallImg img={imge5} name="Bulk edit"  />  
                             </td>
                         </tr>
@@ -32,9 +32,10 @@ export default function Images(){
                     <p>RetouchingAI</p>
                     <p>CroppingAI</p>
                 </div>
-
-                <h2 className="image-heading">Welcome to PixelPilot</h2>
-                <p className="subline">Your one-stop solution for long and tedious photo editing. Edit 1000+ photos in a single click.</p>
+                <div className= "lowercontent">
+                    <h2 className="image-heading">Welcome to PixelPilot</h2>
+                    <p   className="subline">Your one-stop solution for long and tedious photo editing. Edit 1000+ photos in a single click.</p>
+                </div>
             </div>
         </>
     )
